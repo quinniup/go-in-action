@@ -2,6 +2,9 @@ package _3_composite
 
 import "fmt"
 
+// 组合模式统一对象和对象集，使得相同的接口使用对象和对象集
+// 组合模式下，常用树状结构，用于统一叶子节点和树节点访问，并且可以用于应用某一操作到所有子节点。
+
 type Component interface {
 	Parent() Component
 	SetParent(Component)
