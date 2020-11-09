@@ -11,5 +11,8 @@ func TestDecorator(t *testing.T) {
 	comm = WarpAddDecorator(comm, 8)
 
 	res := comm.Calc()
+	if res != 18 {
+		t.Fatal(res)
+	}
 	fmt.Println(res)
 }
